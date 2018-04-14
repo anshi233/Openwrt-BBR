@@ -1,6 +1,6 @@
 Compile BBR on lastest Openwrt/LEDE release
 
-Useage:
+Usage:
 	(under Openwrt source root)
 	git clone https://github.com/anshi233/Openwrt-BBR.git package/Openwrt-BBR
 	make package/Openwrt-BBR/compile
