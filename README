@@ -3,7 +3,9 @@ Compile BBR on lastest Openwrt/LEDE release
 Usage:
 	(under Openwrt source root)
 	git clone https://github.com/anshi233/Openwrt-BBR.git package/Openwrt-BBR
-	make package/Openwrt-BBR/compile
+	make menuconfig
+	select Kernel modules --> Network Support ---> kmod-bbr
+	make package/Openwrt-BBR/compile V=99
 	
 	enable bbr on your device:
 	add "net.ipv4.tcp_congestion_control=bbr" to /etc/sysctl.conf
