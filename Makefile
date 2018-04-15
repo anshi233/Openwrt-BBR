@@ -34,7 +34,6 @@ MAKE_OPTS:= \
 
 define Build/Prepare
 	mkdir -p $(PKG_BUILD_DIR)
-	$(CP) $(LINUX_DIR)/net/ipv4/tcp_bbr.c $(PKG_BUILD_DIR)/
 	$(CP) ./src/* $(PKG_BUILD_DIR)/
 endef
 
