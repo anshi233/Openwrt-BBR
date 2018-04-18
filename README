@@ -8,6 +8,9 @@ Usage:
 	make package/Openwrt-BBR/compile V=99
 	
 	enable bbr on your device:
+	install ipk using opkg
+	insmod bbr
+	echo "bbr" > /etc/modules.d/bbr
 	add "net.ipv4.tcp_congestion_control=bbr" to /etc/sysctl.conf
 	save and run "sysctl -p"
-	
+	done
